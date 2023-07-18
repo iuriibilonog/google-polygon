@@ -1,21 +1,40 @@
 {
-  "name": "google-polygon",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "google-polygon-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iuriibilonog/google-polygon.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iuriibilonog/google-polygon/issues"
-  },
-  "homepage": "https://github.com/iuriibilonog/google-polygon#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
